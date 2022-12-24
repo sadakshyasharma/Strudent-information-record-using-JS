@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+</head>
+
+<body style="background-color: skyblue">
+    <center>
+        <h1>Student Record</h1>
+    </center>
+
+    <table>
+        <tr>
+            <td>
+
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <h3>Student form</h3>
+
+                    <div>
+                        <label> Full Name</label>
+                        <label class="validation-error hide" id="userNamevalidationError">This field is empty</label>
+                        <input type="text" name="userName" id="userName" placeholder="Enter the user name">
+                    </div>
+
+                    <div>
+                        <label> Roll no</label>
+                        <label class="validation-error hide" id="rollnovalidationError">This field is empty</label>
+                        <input type="number" name="rollno" id="rollno" placeholder="Enter the roll no">
+                    </div>
+
+                    <div>
+                        <label> Student Class</label>
+                        <label class="validation-error hide" id="stdClassvalidationError">This field is empty</label>
+                        <input type="text" name="stdClass" id="stdClass" placeholder="Enter the Student class">
+                    </div>
+
+                    <div>
+                        <label> Total Subject</label>
+                        <label class="validation-error hide" id="tsubvalidationError">This field is empty</label>
+                        <input type="number" name="tsub" id="tsub" placeholder="Enter the Total Subject">
+                    </div>
+
+                    <div>
+                        <label> Age</label>
+                        <label class="validation-error hide" id="agevalidationError">This field is empty</label>
+                        <input type="number" name="userName" id="age" placeholder="Enter the age">
+                    </div>
+
+                    <div>
+                        <div class="form-action-buttons">
+                            <input type="submit" onclick="savedata()" value="Submit">
+                        </div>
+
+
+                </form>
+            </td>
+            <td>
+                <table class="list" id="stdlist" style="background-color: #C2976D;">
+
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Full Name</th>
+                            <th>Roll no</th>
+                            <th>Class</th>
+                            <th>Total subject</th>
+                            <th>Age</th>
+                            <th>Delete</th>
+
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+
+
+        </tr>
+
+
+    </table>
+
+
+    <link href="index1.css" rel="stylesheet" type="text/css">
+    <script src="index1.js"></script>
+</body>
+
+</html>
